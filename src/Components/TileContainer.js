@@ -2,8 +2,8 @@ import React from "react";
 import StoryTile from "./StoryTile";
 import './TileContainer.css'
 
-const TileContainer = ({stories}) => {
-  const storyList = stories.map((article) => {
+const TileContainer = ({ stories }) => {
+  const allStories = stories.map((article) => {
     return (
       <div key={article.uri} className='single-story'>
         <StoryTile {...article} />
@@ -12,9 +12,7 @@ const TileContainer = ({stories}) => {
   })
 
   return( 
-    <div className='tile-container'>
-      {storyList}
-    </div>
+    <div className='tile-container'>{allStories}</div>
   )
 }
 
