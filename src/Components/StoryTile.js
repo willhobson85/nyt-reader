@@ -1,11 +1,11 @@
-import React from "react";
+/* eslint-disable react/prop-types */
+import React from 'react'
 import { Link } from 'react-router-dom'
 import './StoryTile.css'
 import placeholderImage from '../assets/times-symbol.jpeg'
 
-const StoryTile = ({title, byline, multimedia }) => {
-  
-  return(
+const StoryTile = ({ title, byline, multimedia }) => {
+  return (
     <div className="story-tile" id={title}>
       <Link to={`/${title}`}>
         <h1 className="article-title">{title}</h1>
@@ -17,4 +17,3 @@ const StoryTile = ({title, byline, multimedia }) => {
 }
 
 export default StoryTile
-
