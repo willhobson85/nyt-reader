@@ -71,11 +71,6 @@ You can find the project [here](https://github.com/willhobson85/nyt-reader) and 
 
 ![NYT-Reader](https://media.giphy.com/media/JetBvLAhrBGUnQD7Ff/giphy.gif)
 
-Future Features:
-- Implement a local storage to save cards upon refresh.
-- Create an option to change the font for easier reading.
-- Implement a way for users to check their spelling before searching.
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
