@@ -67,7 +67,7 @@ const App = () => {
         <Switch>
           <Route exact path='/'>
             <div className='stories'>
-              {myStories.length === 0 ? <p>Loading stories... </p> : <TileContainer stories={myStories} />}
+              {myStories.length === 0 && !sortedStories ? <p>Loading stories... </p> : <TileContainer stories={myStories} />}
             </div>
           </Route>
           <Route path='/:title' 

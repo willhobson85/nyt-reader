@@ -7,7 +7,14 @@ describe('NYT Top Stories', () => {
   });
 
   it('Should have a header with the site name', () => {
+    cy.get('[data-cy="header-test"]')
+    .should('be.visible')
     cy.get('[data-cy="header-test"] > h1')
+    .contains('NYT Top Stories')
+  })
+
+  it('Should have buttons to sort articles', () => {
+    cy.get('.alpha')
     .should('be.visible')
   })
 })
