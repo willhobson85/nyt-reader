@@ -8,8 +8,8 @@ const StoryTile = ({title, byline, multimedia }) => {
   return(
     <div className="story-tile" id={title}>
       <Link to={`/${title}`}>
-        <h1>{title}</h1>
-        <img src={!multimedia ? placeholderImage : multimedia[0].url} alt={title}/>
+        <h1 className="article-title">{title}</h1>
+        <img className="story-image" src={!multimedia ? placeholderImage : multimedia[0].url} alt={title}/>
         <h3>{byline}</h3>
       </Link>
     </div>

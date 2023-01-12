@@ -25,6 +25,7 @@ const App = () => {
   }
 
   const myStories = filteredStories()
+  console.log(myStories)
   
   const sortData = (direction) => {
     let sorted; 
@@ -66,8 +67,7 @@ const App = () => {
         <Switch>
           <Route exact path='/'>
             <div className='stories'>
-              {myStories.length === 0 && !sortedStories ? <p>Loading stories... </p> : <TileContainer stories={myStories} />}
-              {stories.length === 0 && sortedStories ? <p>Loading stories... </p> : <TileContainer stories={stories} />}
+              {myStories.length === 0 ? <p>Loading stories... </p> : <TileContainer stories={myStories} />}
             </div>
           </Route>
           <Route path='/:title' 

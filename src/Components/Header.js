@@ -3,7 +3,7 @@ import React from "react";
 const Header = ({sorting}) => {
 
   return (
-    <div className="header">
+    <div className="header" data-cy='header-test'>
       <h1>NYT Top Stories</h1>
       <div className="sort-buttons">
         <button className="alpha" onClick={() => sorting('down')}>Sort a-z</button>
