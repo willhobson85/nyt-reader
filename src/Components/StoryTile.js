@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom'
 import './StoryTile.css'
 import placeholderImage from '../assets/times-symbol.jpeg'
 
-const StoryTile = ({title, updated_date, byline, multimedia }) => {
-  // I want to add images to this 
+const StoryTile = ({title, byline, multimedia }) => {
   
   return(
     <div className="story-tile" id={title}>

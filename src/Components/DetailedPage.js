@@ -1,5 +1,4 @@
 import React from "react";
-import { useParams } from "react-router-dom";
 import placeholderImage from '../assets/times-symbol.jpeg'
 import './DetailedPage.css'
 
