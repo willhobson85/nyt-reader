@@ -3,6 +3,7 @@ import React, {useState, useEffect} from 'react';
 import { Switch, Route } from 'react-router-dom';
 import TileContainer from './TileContainer';
 import DetailedPage from './DetailedPage';
+
 const API_KEY = process.env.REACT_APP_API_KEY
 
 const App = () => {
@@ -12,8 +13,15 @@ const App = () => {
     fetch(`https://api.nytimes.com/svc/topstories/v2/home.json?api-key=${API_KEY}`)
     .then(response => response.json())
     .then(data => setStories(data.results))
-    console.log(stories)
   }, []);
+
+  const filteredStories = () => {
+    const filtered = stories.filter((story) => {
+      return !story.title.includes('?')
+    })
+    return filtered
+  }
+  const myStories = filteredStories()
 
   return (
     <div className='App'>
@@ -23,11 +31,13 @@ const App = () => {
         <Switch>
           <Route exact path='/'>
             <div className='stories'>
-              {stories.length === 0 ? <p>Loading stories... </p> : <TileContainer stories={stories} />}
+              {myStories.length === 0 ? <p>Loading stories... </p> : <TileContainer stories={myStories} />}
             </div>
           </Route>
-          <Route path='/:title' render={({match}) => {
-            const showStory = stories.find((story) => story.uri === match.params.uri)
+          <Route path='/:title' 
+            render={({match}) => {
+              const showStory = myStories.find((article) => {
+              return article.title === match.params.title})
             return <DetailedPage {...showStory} />
           }} />
         </Switch>
