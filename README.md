@@ -69,7 +69,7 @@ You can find the project [here](https://github.com/willhobson85/nyt-reader) and 
 
 ## Usage
 
-![VocabularyExtender](https://user-images.githubusercontent.com/99286590/201572382-c38664c4-8d3a-47c4-a407-acef70fbbe58.gif)
+![VocabularyExtender](https://user-images.githubusercontent.com/99286590/212197204-41a0214f-b802-48e3-b9dc-2f63046a4921.mov)
 
 Future Features:
 - Implement a local storage to save cards upon refresh.
