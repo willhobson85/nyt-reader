@@ -1,7 +1,27 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1, h3 {
   color: black;
+}
+
+.stories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sort-buttons {
+  display: flex;
+  justify-content: space-evenly;
 }

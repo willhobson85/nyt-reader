@@ -1,0 +1,15 @@
+.story-tile {
+  border: 1px solid black;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.article-title {
+  width: 90%;
+}
+
+.story-image {
+  width: auto;
+}

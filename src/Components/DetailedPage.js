@@ -7,11 +7,11 @@ const DetailedPage = (match) => {
 
   return(
     <div className='detailed-page'>
-      <h1>{title}</h1>
-      <p>{byline}</p>
+      <h1 className="detailed-title">{title}</h1>
+      <p className="detailed-byline">{byline}</p>
       <img src={!multimedia ? placeholderImage : multimedia[0].url} alt={title}/>
-      <p>{abstract}</p>
-      <a href={short_url}>Click here to see the full story on the New York Times website</a>
+      <p className="detailed-abstract">{abstract}</p>
+      <a className="detailed-link" href={short_url}>Click here to see the full story on the New York Times website</a>
 
     </div>
   )
