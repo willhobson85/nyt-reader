@@ -33,6 +33,6 @@ describe('template spec', () => {
 
   it('Should be abkle to navigate Home', () => {
     cy.get('#home').click()
-    cy.url().should('eq', 'http://localhost:3000/');
+    cy.url().should('eq', 'http://localhost:3000/')
   })
 })
