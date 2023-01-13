@@ -1,7 +1,7 @@
-import React from "react";
+/* eslint-disable react/prop-types */
+import React from 'react'
 
-const Header = ({sorting}) => {
-
+const Header = ({ sorting }) => {
   return (
     <div className="header" data-cy='header-test'>
       <h1>NYT Top Stories</h1>

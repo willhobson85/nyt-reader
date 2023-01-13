@@ -1,5 +1,6 @@
-import React from "react";
-import StoryTile from "./StoryTile";
+/* eslint-disable react/prop-types */
+import React from 'react'
+import StoryTile from './StoryTile'
 import './TileContainer.css'
 
 const TileContainer = ({ stories }) => {
@@ -11,7 +12,7 @@ const TileContainer = ({ stories }) => {
     )
   })
 
-  return( 
+  return (
     <div className='tile-container'>{allStories}</div>
   )
 }
