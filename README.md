@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 
-Vocabulary Extender
+NYT-Reader
 
 ## Table of Contents
 
