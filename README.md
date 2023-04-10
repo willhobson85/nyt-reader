@@ -25,7 +25,7 @@ This app is designed to return the top stories from the New York Times TopStorie
 
 ## Project Spec
 
-The NYT-Reader (module 3 showcase project) was built in the final week of [Turing School of Software and Design](https://turing.edu/) front-end engineering program. The goals of this [solo project](https://frontend.turing.edu/projects/module-3/showcase.html) were to:
+The NYT-Reader was built in the final week of [Turing School of Software and Design](https://turing.edu/) front-end engineering program. The goals of this [solo project](https://frontend.turing.edu/projects/module-3/showcase.html) were to:
 
 - Utilize React and React Router
 - Make network requests to API endpoints to retrieve and manipulate data
